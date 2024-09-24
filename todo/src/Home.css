@@ -1,0 +1,100 @@
+#home {
+    text-align: center;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.todo-list {
+    max-height: 400px;
+    overflow-y: hidden; /* Hide scroll */
+    margin: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.task_info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px; 
+}
+
+.task_info:hover {
+    background-color: #333; 
+    border-radius: 5px;
+    padding-right: 450px;
+    padding-left: 12px;
+    transition: background-color 0.3s, padding-right 0.3s, padding-left 0.3s, border-radius 0.3s;
+}
+
+.checked {
+    color: #6200ea; /* Task check color */
+}
+
+.icon {
+    cursor: pointer; /* Pointer cursor for icons */
+}
+
+.icon.delete:hover {
+    color: red; /* Change delete icon color on hover */
+}
+
+.view-more-btn {
+    margin: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #0d47a1;
+}
+
+.view-more-btn:hover {
+    color: #1e88e5;
+}
+
+.logout-btn,
+.mode-btn {
+    background-color: transparent; /* No background color */
+    color: #0d47a1; /* Default color */
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    position: relative; /* For hover text */
+    padding-top: 5px; /* Added padding */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.logout-btn:hover,
+.mode-btn:hover {
+    color: #1e88e5; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Smooth transition for background color when toggling dark/light mode */
+body {
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: white; /* Light text color */
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: white; /* Light background */
+    color: black; /* Dark text color */
+}

@@ -1,0 +1,28 @@
+.create_form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.task-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.addbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea;
+    color: white;
+    cursor: pointer;
+}
+
+.addbtn:hover {
+    background-color: #3700b3;
+}

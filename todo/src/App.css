@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #0d47a1; /* Darker blue text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    height: 100vh; /* Ensure dark mode covers entire height */
+}
+
+.logout-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.logout-btn,
+.mode-btn {
+    background-color: transparent; /* No background color */
+    color: #0d47a1; /* Default color */
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    position: relative; /* For hover text */
+}
+
+.logout-btn:hover,
+.mode-btn:hover {
+    color: #1e88e5; /* Change color on hover */
+}
